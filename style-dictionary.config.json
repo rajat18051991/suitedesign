@@ -1,6 +1,33 @@
 {
   "source": ["tokens.json"],
   "platforms": {
+    "css": {
+      "transforms": ["attribute/cti", "name/cti/kebab", "size/rem", "color/css"],
+      "buildPath": "dist/css/",
+      "files": [{
+        "destination": "variables.css",
+        "format": "css/variables",
+        "options": {
+          "selector": ":root"
+        }
+      }]
+    },
+    "scss": {
+      "transforms": ["attribute/cti", "name/cti/kebab", "size/rem", "color/css"],
+      "buildPath": "dist/scss/",
+      "files": [{
+        "destination": "_variables.scss",
+        "format": "scss/variables"
+      }]
+    },
+    "javascript": {
+      "transforms": ["attribute/cti", "name/cti/camel", "size/rem", "color/hex"],
+      "buildPath": "dist/js/",
+      "files": [{
+        "destination": "tokens.js",
+        "format": "javascript/module"
+      }]
+    },
     "web-primitive-light": {
       "transformGroup": "web",
       "buildPath": "build/web/primitive/light/",
