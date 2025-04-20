@@ -1,0 +1,200 @@
+{
+  "source": ["tokens.json"],
+  "platforms": {
+    "css": {
+      "transforms": ["attribute/cti", "name/cti/kebab", "size/rem", "color/css"],
+      "buildPath": "dist/css/",
+      "files": [{
+        "destination": "variables.css",
+        "format": "css/variables",
+        "options": {
+          "selector": ":root"
+        }
+      }]
+    },
+    "scss": {
+      "transforms": ["attribute/cti", "name/cti/kebab", "size/rem", "color/css"],
+      "buildPath": "dist/scss/",
+      "files": [{
+        "destination": "_variables.scss",
+        "format": "scss/variables"
+      }]
+    },
+    "javascript": {
+      "transforms": ["attribute/cti", "name/cti/camel", "size/rem", "color/hex"],
+      "buildPath": "dist/js/",
+      "files": [{
+        "destination": "tokens.js",
+        "format": "javascript/module"
+      }]
+    },
+    "web-primitive-light": {
+      "transformGroup": "web",
+      "buildPath": "build/web/primitive/light/",
+      "files": [{
+        "destination": "variables.css",
+        "format": "css/variables",
+        "filter": {
+          "attributes": {
+            "category": "primitive",
+            "type": "light"
+          }
+        }
+      }]
+    },
+    "web-primitive-dark": {
+      "transformGroup": "web",
+      "buildPath": "build/web/primitive/dark/",
+      "files": [{
+        "destination": "variables.css",
+        "format": "css/variables",
+        "filter": {
+          "attributes": {
+            "category": "primitive",
+            "type": "dark"
+          }
+        }
+      }]
+    },
+    "web-density-comfortable": {
+      "transformGroup": "web",
+      "buildPath": "build/web/density/comfortable/",
+      "files": [{
+        "destination": "density.css",
+        "format": "css/variables",
+        "filter": {
+          "attributes": {
+            "category": "density",
+            "type": "comfortable"
+          }
+        }
+      }]
+    },
+    "web-density-dense": {
+      "transformGroup": "web",
+      "buildPath": "build/web/density/dense/",
+      "files": [{
+        "destination": "density.css",
+        "format": "css/variables",
+        "filter": {
+          "attributes": {
+            "category": "density",
+            "type": "dense"
+          }
+        }
+      }]
+    },
+    "web-density-tight": {
+      "transformGroup": "web",
+      "buildPath": "build/web/density/tight/",
+      "files": [{
+        "destination": "density.css",
+        "format": "css/variables",
+        "filter": {
+          "attributes": {
+            "category": "density",
+            "type": "tight"
+          }
+        }
+      }]
+    },
+    "web-theme-prism": {
+      "transformGroup": "web",
+      "buildPath": "build/web/theme/prism/",
+      "files": [{
+        "destination": "theme.css",
+        "format": "css/variables",
+        "filter": {
+          "attributes": {
+            "category": "theme",
+            "type": "Prism"
+          }
+        }
+      }]
+    },
+    "web-theme-danland": {
+      "transformGroup": "web",
+      "buildPath": "build/web/theme/danland/",
+      "files": [{
+        "destination": "theme.css",
+        "format": "css/variables",
+        "filter": {
+          "attributes": {
+            "category": "theme",
+            "type": "Danland"
+          }
+        }
+      }]
+    },
+    "web-theme-traum": {
+      "transformGroup": "web",
+      "buildPath": "build/web/theme/traum/",
+      "files": [{
+        "destination": "theme.css",
+        "format": "css/variables",
+        "filter": {
+          "attributes": {
+            "category": "theme",
+            "type": "Traum"
+          }
+        }
+      }]
+    },
+    "web-feedback-low": {
+      "transformGroup": "web",
+      "buildPath": "build/web/feedback/low/",
+      "files": [{
+        "destination": "feedback.css",
+        "format": "css/variables",
+        "filter": {
+          "attributes": {
+            "category": "feedback",
+            "type": "low"
+          }
+        }
+      }]
+    },
+    "web-feedback-high": {
+      "transformGroup": "web",
+      "buildPath": "build/web/feedback/high/",
+      "files": [{
+        "destination": "feedback.css",
+        "format": "css/variables",
+        "filter": {
+          "attributes": {
+            "category": "feedback",
+            "type": "high"
+          }
+        }
+      }]
+    },
+    "web-numbers-mobile": {
+      "transformGroup": "web",
+      "buildPath": "build/web/numbers/mobile/",
+      "files": [{
+        "destination": "numbers.css",
+        "format": "css/variables",
+        "filter": {
+          "attributes": {
+            "category": "numbers",
+            "type": "mobile"
+          }
+        }
+      }]
+    },
+    "web-numbers-desktop": {
+      "transformGroup": "web",
+      "buildPath": "build/web/numbers/desktop/",
+      "files": [{
+        "destination": "numbers.css",
+        "format": "css/variables",
+        "filter": {
+          "attributes": {
+            "category": "numbers",
+            "type": "desktop"
+          }
+        }
+      }]
+    }
+  }
+} 
